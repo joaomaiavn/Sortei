@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteio de Números e Amigo Secreto</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteio de Números e Amigo Secreto</h1>
+        
+        <!-- Secret Friend Section -->
+        <section id="secretFriendSection">
+            <h2>Amigo Secreto</h2>
+            <div class="input-area">
+                <input type="text" id="nameInput" placeholder="Digite o nome do amigo" />
+                <button id="addNameBtn">Adicionar Nome</button>
+            </div>
+            <div class="names-list">
+                <h3>Lista de Nomes:</h3>
+                <ul id="nameList"></ul>
+            </div>
+            <button id="drawBtn">Sortear Amigo Secreto</button>
+            <div id="result" class="result"></div>
+        </section>
+
+        <hr>
+
+        <!-- Number Draw Section -->
+       <!-- Number Draw Section -->
+<section id="numberDrawSection">
+    <h2>Sorteador de Números</h2>
+    <div class="container__campo">
+        <label>Quantidade de números:</label>
+        <input type="number" id="quantidade" min="1">
+    </div>
+    <div class="container__campo">
+        <label>Do número:</label>
+        <input type="number" id="de" min="1">
+    </div>
+    <div class="container__campo">
+        <label>Até o número:</label>
+        <input type="number" id="ate" min="1">
+    </div>
+    <button id="btn-sortear">Sortear Números</button>
+    <div id="resultado" class="result">Números sorteados: nenhum até agora</div>
+</section>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
